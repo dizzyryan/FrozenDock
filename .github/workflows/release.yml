@@ -1,0 +1,86 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags like v1.0.0
+
+jobs:
+  build:
+    name: Build FrozenDock
+    runs-on: macos-14  # Apple Silicon runner
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app || sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Build Archive
+        run: |
+          xcodebuild archive \
+            -project FrozenDock.xcodeproj \
+            -scheme FrozenDock \
+            -configuration Release \
+            -archivePath build/FrozenDock.xcarchive \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            -quiet
+
+      - name: Export App
+        run: |
+          mkdir -p build/export
+          cp -R "build/FrozenDock.xcarchive/Products/Applications/FrozenDock.app" "build/export/FrozenDock.app"
+          codesign --force --deep --sign - "build/export/FrozenDock.app"
+
+      - name: Create DMG
+        run: |
+          mkdir -p build/dmg_temp
+          cp -R "build/export/FrozenDock.app" build/dmg_temp/
+          ln -s /Applications build/dmg_temp/Applications
+          hdiutil create \
+            -volname "FrozenDock" \
+            -srcfolder build/dmg_temp \
+            -ov -format UDZO \
+            build/FrozenDock.dmg \
+            -quiet
+          rm -rf build/dmg_temp
+
+      - name: Create Zip
+        run: |
+          cd build/export
+          zip -r -q ../FrozenDock.zip FrozenDock.app
+          cd ../..
+
+      - name: Get version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: FrozenDock ${{ steps.version.outputs.VERSION }}
+          body: |
+            ## FrozenDock ${{ steps.version.outputs.VERSION }}
+
+            ### Installation
+            1. Download **FrozenDock.dmg** below
+            2. Open the DMG and drag FrozenDock to Applications
+            3. Launch FrozenDock and grant Accessibility permissions
+            4. Click **Start Protection**
+
+            > **Note:** On first launch, macOS may show "app is from an unidentified developer." 
+            > Right-click the app → Open → Open to bypass Gatekeeper.
+
+            ### Requirements
+            - macOS 13.0 (Ventura) or later
+            - Accessibility permissions
+          files: |
+            build/FrozenDock.dmg
+            build/FrozenDock.zip
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

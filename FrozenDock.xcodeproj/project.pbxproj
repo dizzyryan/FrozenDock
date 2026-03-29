@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC0000000000000000000001 /* FrozenDockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000001 /* FrozenDockApp.swift */; };
+		CC0000000000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000002 /* AppDelegate.swift */; };
+		CC0000000000000000000003 /* DisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000003 /* DisplayInfo.swift */; };
+		CC0000000000000000000004 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000004 /* Profile.swift */; };
+		CC0000000000000000000005 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000005 /* AppSettings.swift */; };
+		CC0000000000000000000006 /* DockProtectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000006 /* DockProtectionService.swift */; };
+		CC0000000000000000000007 /* DisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000007 /* DisplayManager.swift */; };
+		CC0000000000000000000008 /* DockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000008 /* DockController.swift */; };
+		CC0000000000000000000009 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000009 /* ProfileManager.swift */; };
+		CC000000000000000000000A /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000A /* UpdateChecker.swift */; };
+		CC000000000000000000000B /* LoginItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000B /* LoginItemManager.swift */; };
+		CC000000000000000000000C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000C /* ContentView.swift */; };
+		CC000000000000000000000D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000D /* SettingsView.swift */; };
+		CC000000000000000000000E /* DisplayMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000E /* DisplayMapView.swift */; };
+		CC000000000000000000000F /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000000F /* ProfilesView.swift */; };
+		CC0000000000000000000010 /* StatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000010 /* StatusBadgeView.swift */; };
+		CC0000000000000000000011 /* AccessibilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000011 /* AccessibilityHelper.swift */; };
+		CC0000000000000000000012 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000012 /* Constants.swift */; };
+		CC0000000000000000000013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0000000000000000000013 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000004 /* FrozenDock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrozenDock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0000000000000000000001 /* FrozenDockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenDockApp.swift; sourceTree = "<group>"; };
+		BB0000000000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB0000000000000000000003 /* DisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInfo.swift; sourceTree = "<group>"; };
+		BB0000000000000000000004 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BB0000000000000000000005 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		BB0000000000000000000006 /* DockProtectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockProtectionService.swift; sourceTree = "<group>"; };
+		BB0000000000000000000007 /* DisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayManager.swift; sourceTree = "<group>"; };
+		BB0000000000000000000008 /* DockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockController.swift; sourceTree = "<group>"; };
+		BB0000000000000000000009 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		BB000000000000000000000A /* UpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChecker.swift; sourceTree = "<group>"; };
+		BB000000000000000000000B /* LoginItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemManager.swift; sourceTree = "<group>"; };
+		BB000000000000000000000C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB000000000000000000000D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB000000000000000000000E /* DisplayMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMapView.swift; sourceTree = "<group>"; };
+		BB000000000000000000000F /* ProfilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000010 /* StatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadgeView.swift; sourceTree = "<group>"; };
+		BB0000000000000000000011 /* AccessibilityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityHelper.swift; sourceTree = "<group>"; };
+		BB0000000000000000000012 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB0000000000000000000013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0000000000000000000014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0000000000000000000015 /* FrozenDock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrozenDock.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000002 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000005 /* FrozenDock */,
+				AA0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000004 /* FrozenDock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* FrozenDock */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000006 /* App */,
+				AA0000000000000000000007 /* Models */,
+				AA0000000000000000000008 /* Services */,
+				AA0000000000000000000009 /* Views */,
+				AA000000000000000000000A /* Utilities */,
+				AA000000000000000000000B /* Resources */,
+			);
+			path = FrozenDock;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000006 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000001 /* FrozenDockApp.swift */,
+				BB0000000000000000000002 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000003 /* DisplayInfo.swift */,
+				BB0000000000000000000004 /* Profile.swift */,
+				BB0000000000000000000005 /* AppSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000008 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000006 /* DockProtectionService.swift */,
+				BB0000000000000000000007 /* DisplayManager.swift */,
+				BB0000000000000000000008 /* DockController.swift */,
+				BB0000000000000000000009 /* ProfileManager.swift */,
+				BB000000000000000000000A /* UpdateChecker.swift */,
+				BB000000000000000000000B /* LoginItemManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB000000000000000000000C /* ContentView.swift */,
+				BB000000000000000000000D /* SettingsView.swift */,
+				BB000000000000000000000E /* DisplayMapView.swift */,
+				BB000000000000000000000F /* ProfilesView.swift */,
+				BB0000000000000000000010 /* StatusBadgeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000011 /* AccessibilityHelper.swift */,
+				BB0000000000000000000012 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000000000000000000013 /* Assets.xcassets */,
+				BB0000000000000000000014 /* Info.plist */,
+				BB0000000000000000000015 /* FrozenDock.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE0000000000000000000001 /* FrozenDock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0000000000000000000006 /* Build configuration list for PBXNativeTarget "FrozenDock" */;
+			buildPhases = (
+				DD0000000000000000000001 /* Sources */,
+				DD0000000000000000000002 /* Resources */,
+				DD0000000000000000000003 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrozenDock;
+			productName = FrozenDock;
+			productReference = AA0000000000000000000004 /* FrozenDock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EE0000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = FF0000000000000000000005 /* Build configuration list for PBXProject "FrozenDock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000002 /* Root */;
+			productRefGroup = AA0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0000000000000000000001 /* FrozenDock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD0000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0000000000000000000013 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC0000000000000000000001 /* FrozenDockApp.swift in Sources */,
+				CC0000000000000000000002 /* AppDelegate.swift in Sources */,
+				CC0000000000000000000003 /* DisplayInfo.swift in Sources */,
+				CC0000000000000000000004 /* Profile.swift in Sources */,
+				CC0000000000000000000005 /* AppSettings.swift in Sources */,
+				CC0000000000000000000006 /* DockProtectionService.swift in Sources */,
+				CC0000000000000000000007 /* DisplayManager.swift in Sources */,
+				CC0000000000000000000008 /* DockController.swift in Sources */,
+				CC0000000000000000000009 /* ProfileManager.swift in Sources */,
+				CC000000000000000000000A /* UpdateChecker.swift in Sources */,
+				CC000000000000000000000B /* LoginItemManager.swift in Sources */,
+				CC000000000000000000000C /* ContentView.swift in Sources */,
+				CC000000000000000000000D /* SettingsView.swift in Sources */,
+				CC000000000000000000000E /* DisplayMapView.swift in Sources */,
+				CC000000000000000000000F /* ProfilesView.swift in Sources */,
+				CC0000000000000000000010 /* StatusBadgeView.swift in Sources */,
+				CC0000000000000000000011 /* AccessibilityHelper.swift in Sources */,
+				CC0000000000000000000012 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FF0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FrozenDock/Resources/FrozenDock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FrozenDock/Resources/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frozendock.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FF0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FrozenDock/Resources/FrozenDock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FrozenDock/Resources/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frozendock.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF0000000000000000000005 /* Build configuration list for PBXProject "FrozenDock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0000000000000000000001 /* Debug */,
+				FF0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0000000000000000000006 /* Build configuration list for PBXNativeTarget "FrozenDock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0000000000000000000003 /* Debug */,
+				FF0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000000000000000000001 /* Project object */;
+}
