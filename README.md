@@ -47,7 +47,7 @@ Without this, FrozenDock cannot create the event tap needed to intercept mouse e
 ## Build from Source
 
 ```bash
-git clone https://github.com/your-username/FrozenDock.git
+git clone https://github.com/dizzyryan/FrozenDock.git
 cd FrozenDock
 
 # Option A: Open in Xcode
